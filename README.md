@@ -76,10 +76,15 @@ customer         | customer_id
 **SQL-запрос:**
 
 > SELECT table_name, column_name
+
 > FROM information_schema.key_column_usage
+
 > WHERE table_schema = 'sakila'
+
 > AND constraint_name = 'PRIMARY'
+
 > ORDER BY table_name, ordinal_position;
 
 **Итоговая таблица:**
+
 ![img](img/screenshot_4.png)
