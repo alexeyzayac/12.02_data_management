@@ -44,4 +44,3 @@
 22. mysql -u sys_temp -p
 23. USE sakila;
 24. SHOW TABLES;
-
