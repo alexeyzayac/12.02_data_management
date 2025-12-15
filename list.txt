@@ -33,14 +33,15 @@
 15. mkdir ~/netology
 16. cd ~/netology
 17. wget https://downloads.mysql.com/docs/sakila-db.zip
-18. unzip sakila-db.zip -d sakila-db
-19. unzip sakila-db.zip 
-20. cd sakila-db
+18. unzip sakila-db.zip 
+19. cd sakila-db
 
 # 8. Восстановите дамп в базу данных
-21. mysql -u sys_temp -p < sakila-schema.sql
-22. mysql -u sys_temp -p < sakila-data.sql
+20. mysql -u sys_temp -p < sakila-schema.sql
+21. mysql -u sys_temp -p < sakila-data.sql
 
 #9. При работе в командной строке используйте команду для получения всех таблиц базы данных
+22. mysql -u sys_temp -p
 23. USE sakila;
 24. SHOW TABLES;
+
