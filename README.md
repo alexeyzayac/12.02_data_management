@@ -33,7 +33,9 @@
 
 * Для смены типа аутентификации с sha2 используйте запрос:
 
-> ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```sql
+ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
 
 1.7. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
 
@@ -75,15 +77,13 @@ customer         | customer_id
 
 **SQL-запрос:**
 
-> SELECT table_name, column_name
-
-> FROM information_schema.key_column_usage
-
-> WHERE table_schema = 'sakila'
-
-> AND constraint_name = 'PRIMARY'
-
-> ORDER BY table_name, ordinal_position;
+```
+SELECT table_name, column_name
+FROM information_schema.key_column_usage
+WHERE table_schema = 'sakila'
+AND constraint_name = 'PRIMARY'
+ORDER BY table_name, ordinal_position;
+```
 
 **Итоговая таблица:**
 
